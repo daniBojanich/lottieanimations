@@ -1,0 +1,87 @@
+[debug] [2025-01-27T04:01:27.713Z] ----------------------------------------------------------------------
+[debug] [2025-01-27T04:01:27.715Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2025-01-27T04:01:27.715Z] CLI Version:   13.29.2
+[debug] [2025-01-27T04:01:27.715Z] Platform:      win32
+[debug] [2025-01-27T04:01:27.715Z] Node Version:  v22.13.1
+[debug] [2025-01-27T04:01:27.715Z] Time:          Mon Jan 27 2025 01:01:27 GMT-0300 (hora estándar de Argentina)
+[debug] [2025-01-27T04:01:27.715Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-27T04:01:27.816Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-27T04:01:27.816Z] > authorizing via signed-in user (danielabojanich@gmail.com)
+[debug] [2025-01-27T04:01:27.817Z] [iam] checking project lottieexamples for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-27T04:01:27.817Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:27.817Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:27.818Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lottieexamples:testIamPermissions [none]
+[debug] [2025-01-27T04:01:27.818Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lottieexamples:testIamPermissions x-goog-quota-user=projects/lottieexamples
+[debug] [2025-01-27T04:01:27.818Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lottieexamples:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-27T04:01:28.726Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lottieexamples:testIamPermissions 200
+[debug] [2025-01-27T04:01:28.726Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lottieexamples:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-27T04:01:28.727Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:28.727Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:28.727Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lottieexamples [none]
+[debug] [2025-01-27T04:01:29.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lottieexamples 200
+[debug] [2025-01-27T04:01:29.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lottieexamples {"projectId":"lottieexamples","projectNumber":"413655617507","displayName":"lottieexamples","name":"projects/lottieexamples","resources":{"hostingSite":"lottieexamples"},"state":"ACTIVE","etag":"1_63c6dc4b-0e8a-4756-9a88-f7d57b4b45cc"}
+[debug] [2025-01-27T04:01:30.082Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:30.082Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:30.082Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites pageToken=&pageSize=10
+[debug] [2025-01-27T04:01:31.526Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites 200
+[debug] [2025-01-27T04:01:31.526Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites {"sites":[{"name":"projects/lottieexamples/sites/lottieexamples","defaultUrl":"https://lottieexamples.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-01-27T04:01:31.527Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:31.527Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:31.527Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites 
+[debug] [2025-01-27T04:01:32.151Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites 200
+[debug] [2025-01-27T04:01:32.152Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites {"sites":[{"name":"projects/lottieexamples/sites/lottieexamples","defaultUrl":"https://lottieexamples.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-01-27T04:01:32.152Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:32.152Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:32.152Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lottieexamples/webApps/-/config [none]
+[debug] [2025-01-27T04:01:33.589Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lottieexamples/webApps/-/config 200
+[debug] [2025-01-27T04:01:33.589Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lottieexamples/webApps/-/config {"projectId":"lottieexamples","appId":"1:413655617507:web:c4897b99b97a4005d35ad6","storageBucket":"lottieexamples.firebasestorage.app","apiKey":"AIzaSyD9yAVx8veFIIVnvAAlU3cgLHvxM0AYaH8","authDomain":"lottieexamples.firebaseapp.com","messagingSenderId":"413655617507"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-01-27T04:01:36.109Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:36.109Z] Checked if tokens are valid: true, expires at: 1737953607512
+[debug] [2025-01-27T04:01:36.109Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites/lottieexamples [none]
+[debug] [2025-01-27T04:01:36.554Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites/lottieexamples 200
+[debug] [2025-01-27T04:01:36.554Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/lottieexamples/sites/lottieexamples {"name":"projects/lottieexamples/sites/lottieexamples","defaultUrl":"https://lottieexamples.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.1.6
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info] Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: document is not defined
+    at createTag (B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:402575)
+    at B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:415463
+    at B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:415586
+    at B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:418411
+    at B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:402240
+    at 8187 (B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:402244)
+    at t (B:\Laburo\lotties\lottie-animation\.next\server\webpack-runtime.js:1:128)
+    at 7483 (B:\Laburo\lotties\lottie-animation\.next\server\app\page.js:6:395785)
+    at Object.t [as require] (B:\Laburo\lotties\lottie-animation\.next\server\webpack-runtime.js:1:128)
+    at require (B:\Laburo\lotties\lottie-animation\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:131:7946)
+Export encountered an error on /page: /, exiting the build.
+
+[info]  ⨯ Static worker exited with code: 1 and signal: null
+
+[debug] [2025-01-27T04:01:42.404Z] Error: ENOENT: no such file or directory, open 'B:\Laburo\lotties\lottie-animation\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
